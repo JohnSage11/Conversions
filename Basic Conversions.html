@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Multi-Page Styles.css">
+<title>
+Unit Conversions
+</title>
+<script type="application/javascript">
+
+    //Celsius to Kelvin
+function tempConversion(){
+    let c = document.getElementById("c").value;
+    let F = (c * 9/5) + 32;
+    document.getElementById("f").value = F;
+}
+
+   //Kg to Pound
+function wgtConversion(){
+    let kilo = document.getElementById('kg').value;
+    let Pb = kilo * 2.2;
+    document.getElementById('p').value = Pb;
+}
+
+  //Km to Miles
+function kmConversion(){
+    let km=document.getElementById('d').value;
+    let Miles = km * 0.62137;
+    document.getElementById('t').value = Miles;
+}
+</script>
+</head>
+<body>
+    <div id="navbar">
+    <nav>
+        <a href="Basic Conversions.html" target="_blank">Conversions</a>
+        <a href="Sign In Page.html"target="_blank"> Sign In</a>
+        <a href="Login Page.html"target="_blank"> Login</a>
+    </nav>
+</div>
+<section id='home'>
+    <br/>
+    <header><b> UNIT CONVERSIONS </b> </header>
+    
+</div>
+</section>
+<!-- Conversions take place here-->
+<div id='all-conversion-sections'>
+
+<section id='temperature'>
+<div id='tmp'>
+<figure>
+<img src='https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png'/>
+<figcaption> Celsius to Fahrenheit conversions </figcaption>
+</figure>
+<article>
+<fieldset>
+<legend>
+Temperature
+</legend>
+<!-- Label for temperature input-->
+<label for='Temperature'> Celsius </label><br/>
+<input type='number' id='c'> <br/>
+<br>
+<button id='temperature' onclick="return tempConversion()">Convert</button><br/>
+<br>
+<!-- Label for temperature output-->
+<input type='number' id='f'><br/>
+<label for='Temperature'> Fahrenheit </label>
+
+</fieldset>
+</article>
+<aside> To convert celsius to fahrenheit yourself, use this formula where 'C' is your temperature in celsius and 'F' is temperature in Fahrenheit: <b>F='C+32'</b>
+</aside>
+</div>
+</section>
+
+<section id='wgt'>
+<div id='wgt'>
+<figure>
+ <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
+<figcaption> Kilogrammes to Pound Conversions </figcaption>
+</figure>
+<article>
+<fieldset>
+<legend>
+Weight
+</legend>
+<!-- Label for Weight input-->
+<label for='Weight'> Kilogramme </label><br/>
+<input type='number' id='kg'> <br/>
+
+<button id='weight' onclick = 'return wgtConversion()'>Convert</button><br/>
+
+<!-- Label for weight output-->
+<input type='number' id='p'><br/>
+<label for='weight'> Pound </label>
+
+</fieldset>
+</article>
+<aside> To convert Kilogrames to Pounds yourself, use this formula where 'K' is your Kilogramme and 'P' is Pounds: <b>P='kg x 2.205'</b>
+</aside>
+</div>
+
+<section id='dist'>
+    <div id='dist'>
+    <figure>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px"/>
+        <figcaption> Kilometer to Mile Conversions </figcaption>
+    </figure>
+    <article>
+    <fieldset>
+    <legend>
+    Distance
+    </legend>
+    <!-- Label for Distance input-->
+    <label for='Distance'> Kilometer </label><br/>
+    <input type='number' id='d'> <br/>
+    
+    <button id='distance' onclick="return kmConversion()">Convert</button><br/>
+    
+    <!-- Label for distance output-->
+    <input type='number' id='t'><br/>
+    <label for='distance'> Miles </label>
+    
+    </fieldset>
+    </article>
+    <aside> To convert Kilometer to Miles yourself, use this formula where 'Km' is your Kilometer and 'M' is Miles: <b>M='kg/1.609'</b>
+    </aside>
+    </div>
+</div>
+<!-- footer-->
+<div id='go-home'>
+    <a href='#home'>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+    </a>
+    <div class="foot">
+    <footer> Learn more JS and automate these conversions <br/><br/> This is the SageKing HTML webpage <br/><br/> Learn to code your</footers>
+    </div>
+</div>
+</body>
+</html>
